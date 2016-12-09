@@ -1,0 +1,22 @@
+*{padding:0;margin:0;}
+nav,article{text-align: center;padding:0 5px;}
+article{margin-top: 10px;}
+/* main_image */
+.main_visual{height:200px;border-top:1px solid #d7d7d7;overflow:hidden;position:relative;}
+.main_image{height:200px;overflow:hidden;position:relative;}
+.main_image ul{width:9999px;height:200px;overflow:hidden;position:absolute;top:0;left:0}
+.main_image li{float:left;width:90%;height:200px;}
+
+.game p{text-align: left;margin-top: 5px;font-size: 18px;padding-left: 10px;}
+.game img,.comment img{margin-bottom: 20px;}
+.comment img {margin-top: 20px;}
+.comment ul li{float: left;list-style: none;padding-left: 10px;}
+.comment ul li img{margin:0 0 !important;padding-left: 20px;}
+.f1{clear: both;text-align: left;padding-left: 10px;padding-top: 10px;}
+.f2{padding-top: 30px;}
+
+.f-4 a{display: block;;position: fixed;text-align:center;left: 50%;bottom:0;margin-left:-160px;height: 40px;width: 320px;}
+.f-4 img{margin:0 auto;margin-top:7px;opacity:100 !important;z-index: 2;}
+.f-3{position: fixed;text-align:center;;bottom:0;height: 40px;background:#000;opacity: 0.8;line-height:40px;width:100%;vertical-align: center;}
+
+.bom{color: white;height: 40px;}

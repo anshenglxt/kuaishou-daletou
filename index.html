@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>红包大乐透</title>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+
+
+
+</head>
+<body>
+    <header>
+        <div class="top" onclick="document.location='http://apk.zsyj.com.cn/soft/qudao/hbdlt_045.apk';" >
+            <img src="image/1.jpg" width="100%">
+        </div>
+    </header>
+    <nav>
+          
+
+<div class="main_visual">
+
+  <div class="main_image"  onclick="document.location='http://apk.zsyj.com.cn/soft/qudao/hbdlt_045.apk';">
+    <ul>
+<img src="image/7.jpg">
+<img src="image/7.jpg">
+<img src="image/7.jpg">
+<img src="image/7.jpg">
+    </ul>
+    <a href="javascript:;" id="btn_prev"></a>
+    <a href="javascript:;" id="btn_next"></a>
+  </div>
+</div>
+    </nav>
+    <article>
+      <div class="game">
+            <img src="image/2.jpg" width="40%">
+            <p>
+                红包大乐透是目前深受大众喜爱、好评率非常高的抢红包游戏：1.红包接龙
+                2.红包扫雷
+             3.猜拳PK抢红包
+             4.猜猜猜抢红包
+
+        </div>
+        <div class="comment">
+            <img src="image/3.jpg"width="40%">
+            <ul>
+            <li>天使爱魔鬼</li>
+            <li><img src="image/4.jpg" height="18px;"></li>
+            </ul>
+            <p class="f1">
+              红包接龙、红包扫雷非常有创意，可玩性很强！
+            </p>
+             <ul class="f2">
+            <li>老板发大财</li>
+            <li><img src="image/4.jpg" height="18px;"></li>
+            </ul>
+            <p class="f1">
+              找不到红包群，这里能随时匹配即时玩，非常方便！
+            </p>
+   
+        </div>
+
+    </article>
+   <div class="f-3 bottombox" id="bb">
+       
+    </div>
+    <div class="f-4"><a href="http://apk.zsyj.com.cn/soft/qudao/hbdlt_045.apk"><img src="image/5.jpg "width="100" ></a></div>
+     
+    </div>
+    <div class="bom">
+      saasdf</br>
+      </br>
+      </br>
+      </br></br>
+      </br>
+    </div>
+    <script>
+
+</script>
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.event.drag-1.5.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+  $(".main_visual").hover(function(){
+    $("#btn_prev,#btn_next").fadeIn()
+  },function(){
+    $("#btn_prev,#btn_next").fadeOut()
+  });
+  
+  $dragBln = false;
+  
+  $(".main_image").touchSlider({
+    flexible : true,
+    speed : 200,
+    btn_prev : $("#btn_prev"),
+    btn_next : $("#btn_next"),
+    paging : $(".flicking_con a"),
+    counter : function (e){
+      $(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+    }
+  });
+  
+  $(".main_image").bind("mousedown", function() {
+    $dragBln = false;
+  });
+  
+  $(".main_image").bind("dragstart", function() {
+    $dragBln = true;
+  });
+  
+  $(".main_image a").click(function(){
+    if($dragBln) {
+      return false;
+    }
+  });
+  
+  timer = setInterval(function(){
+    $("#btn_next").click();
+  }, 5000);
+  
+  $(".main_visual").hover(function(){
+    clearInterval(timer);
+  },function(){
+    timer = setInterval(function(){
+      $("#btn_next").click();
+    },5000);
+  });
+  
+  $(".main_image").bind("touchstart",function(){
+    clearInterval(timer);
+  }).bind("touchend", function(){
+    timer = setInterval(function(){
+      $("#btn_next").click();
+    }, 5000);
+  });
+  
+});
+</script>
+</body>
+</html>
