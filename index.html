@@ -23,10 +23,8 @@
 
   <div class="main_image"  onclick="document.location='http://apk.zsyj.com.cn/soft/qudao/hbdlt_045.apk';">
     <ul>
-<img src="image/7.jpg">
-<img src="image/7.jpg">
-<img src="image/7.jpg">
-<img src="image/7.jpg">
+<img src="image/1.gif">
+<img src="image/2.gif">
     </ul>
     <a href="javascript:;" id="btn_prev"></a>
     <a href="javascript:;" id="btn_next"></a>
@@ -57,24 +55,23 @@
             <li><img src="image/4.jpg" height="18px;"></li>
             </ul>
             <p class="f1">
-              找不到红包群，这里能随时匹配即时玩，非常方便！
+              找不到红包群，这里能随时匹配即时玩，很方便！
             </p>
    
         </div>
 
     </article>
-   <div class="f-3 bottombox" id="bb">
+   <div class="f-3 bottombox" id="bb" >
        
     </div>
-    <div class="f-4"><a href="http://apk.zsyj.com.cn/soft/qudao/hbdlt_045.apk"><img src="image/5.jpg "width="100" ></a></div>
+    <div class="f-4" onclick="document.location='http://apk.zsyj.com.cn/soft/qudao/hbdlt_045.apk';"><img src="image/5.jpg "width="150" ></div>
      
     </div>
     <div class="bom">
       saasdf</br>
+      </br> saasdf
       </br>
-      </br>
-      </br></br>
-      </br>
+      </br> saasdf
     </div>
     <script>
 
@@ -122,14 +119,14 @@ $(document).ready(function(){
   
   timer = setInterval(function(){
     $("#btn_next").click();
-  }, 5000);
+  }, 4000);
   
   $(".main_visual").hover(function(){
     clearInterval(timer);
   },function(){
     timer = setInterval(function(){
       $("#btn_next").click();
-    },5000);
+    },4000);
   });
   
   $(".main_image").bind("touchstart",function(){
@@ -137,7 +134,7 @@ $(document).ready(function(){
   }).bind("touchend", function(){
     timer = setInterval(function(){
       $("#btn_next").click();
-    }, 5000);
+    }, 4000);
   });
   
 });
